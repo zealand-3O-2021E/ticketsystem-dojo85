@@ -61,7 +61,6 @@ namespace StoreBaeltTicketLibrary
             return price - CalculatePercents(price, 5);
         }
 
-
         /// <summary>
         /// Helpter mehtod to calculate a certain percentage of another number.
         /// </summary>
