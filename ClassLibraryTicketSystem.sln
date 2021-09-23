@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibraryTicketSystem", "ClassLibraryTicketSystem\ClassLibraryTicketSystem.csproj", "{E03253D9-5B87-43D4-A478-8ED05ED2C266}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketSystemTests", "TicketSystemTests\TicketSystemTests.csproj", "{3F5FC74C-4394-4378-8EE6-ACE36F26CDDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketSystemTests", "TicketSystemTests\TicketSystemTests.csproj", "{3F5FC74C-4394-4378-8EE6-ACE36F26CDDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreBaeltTicketLibrary", "StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.csproj", "{02341A00-5E34-43B2-B1D8-5D59E7B3999E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{3F5FC74C-4394-4378-8EE6-ACE36F26CDDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F5FC74C-4394-4378-8EE6-ACE36F26CDDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F5FC74C-4394-4378-8EE6-ACE36F26CDDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02341A00-5E34-43B2-B1D8-5D59E7B3999E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02341A00-5E34-43B2-B1D8-5D59E7B3999E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02341A00-5E34-43B2-B1D8-5D59E7B3999E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02341A00-5E34-43B2-B1D8-5D59E7B3999E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

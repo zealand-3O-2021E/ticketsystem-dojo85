@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClassLibraryTicketSystem</name>
+    </assembly>
+    <members>
+        <member name="T:ClassLibraryTicketSystem.Car">
+            <summary>
+            Represents a vehicle of type: Car
+            </summary>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.Car.#ctor(System.Boolean)">
+            <summary>
+            Use this constructor to specify if a Brobizz was used.
+            </summary>
+            <param name="brobizz">Set "true" if a Brobizz is used.
+            Set "false" or "null" if no Brobizz is used.
+            </param>
+        </member>
+        <member name="P:ClassLibraryTicketSystem.Car.TicketPrice">
+            <summary>
+            Use this property to specify the ticket price for this vehicle type.
+            </summary>
+        </member>
+        <member name="P:ClassLibraryTicketSystem.Car.Type">
+            <summary>
+            Use this property to specify the vehicle type.
+            </summary>
+        </member>
+        <member name="T:ClassLibraryTicketSystem.MC">
+            <summary>
+            Represents a vehicle of type: Motorcycle
+            </summary>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.MC.#ctor(System.Boolean)">
+            <summary>
+            Use this constructor to specify if a Brobizz was used.
+            </summary>
+            <param name="brobizz">Set "true" if a Brobizz is used.
+            Set "false" or "null" if no Brobizz is used.
+            </param>
+        </member>
+        <member name="P:ClassLibraryTicketSystem.MC.TicketPrice">
+            <summary>
+            Use this property to specify the ticket price for this vehicle type.
+            </summary>
+        </member>
+        <member name="P:ClassLibraryTicketSystem.MC.Type">
+            <summary>
+            Use this property to specify the vehicle type.
+            </summary>
+        </member>
+        <member name="T:ClassLibraryTicketSystem.Vehicle">
+            <summary>
+            This class is used as base class for different vehicle types.
+            </summary>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.Vehicle.#ctor(System.Boolean)">
+            <summary>
+            Use this constructor to specify if a Brobizz was used.
+            </summary>
+            <param name="brobizz">Set "true" if a Brobizz is used.
+            Set "false" or "null" if no Brobizz is used.
+            </param>
+        </member>
+        <member name="P:ClassLibraryTicketSystem.Vehicle.HasBrobizz">
+            <summary>
+            This property indicates if a Brobizz was used to buy the ticket.
+            </summary>
+        </member>
+        <member name="P:ClassLibraryTicketSystem.Vehicle.LicensePlate">
+            <summary>
+            The license number plate of the vehicle used.
+            Maximum allowed length of 7 characters.
+            Throws ArgumentException if longer than 7 characters.
+            </summary>
+        </member>
+        <member name="P:ClassLibraryTicketSystem.Vehicle.Date">
+            <summary>
+            The date and time of the ticket purchase with this vehicle.
+            </summary>
+        </member>
+        <member name="P:ClassLibraryTicketSystem.Vehicle.TicketPrice">
+            <summary>
+            This property provides the standard ticket price for this vehicle type.
+            </summary>
+        </member>
+        <member name="P:ClassLibraryTicketSystem.Vehicle.Type">
+            <summary>
+            This property provides the vehicle type.
+            </summary>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.Vehicle.Price">
+            <summary>
+            Method to retrieve the ticket price for this vehicle.
+            If a Brobizz was used, the discount will be included in the returned value.
+            </summary>
+            <returns>Price as double</returns>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.Vehicle.VehicleType">
+            <summary>
+            Method to retrieve the vehicle type.
+            </summary>
+            <returns>Vehicle type as string.</returns>
+        </member>
+    </members>
+</doc>
