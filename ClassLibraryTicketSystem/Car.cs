@@ -11,6 +11,16 @@ namespace ClassLibraryTicketSystem
     /// </summary>
     public class Car : Vehicle
     {
+        public Car(bool brobizz)
+            :base(brobizz)
+        {
+            HasBrobizz = brobizz;
+        }
+
+        public Car()
+        {
+        }
+
         protected override double TicketPrice => 240;
         protected override string Type => "Car";
     }

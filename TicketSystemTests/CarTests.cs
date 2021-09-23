@@ -7,7 +7,7 @@ namespace TicketSystemTests
     public class CarTests
     {
         [TestMethod]
-        public void Price_Test()
+        public void Price_WithDefaultConstructor_Test()
         {
             Car car = new();
             double expected = 240;
@@ -15,6 +15,19 @@ namespace TicketSystemTests
             double actual = car.Price();          
 
             Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        [DataRow(null, 240)]
+        [DataRow(false, 240)]
+        [DataRow(true, 228)]
+        public void Price_WithBrobizzConstructor_Test(bool hasBrobizz, double expectedPrice)
+        {
+            Car car = new(hasBrobizz);
+
+            double actual = car.Price();
+
+            Assert.AreEqual(expectedPrice, actual, 0.01);
         }
 
         [TestMethod]

@@ -12,7 +12,7 @@ namespace TicketSystemTests
     public class McTests
     {
         [TestMethod]
-        public void Price_Test()
+        public void Price_WithDefaultConstructor_Test()
         {
             MC mc = new();
             double expected = 125;
@@ -20,6 +20,19 @@ namespace TicketSystemTests
             double actual = mc.Price();
 
             Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        [DataRow(null, 125)]
+        [DataRow(false, 125)]
+        [DataRow(true, 118.75)]
+        public void Price_WithBrobizzConstructor_Test(bool hasBrobizz, double expectedPrice)
+        {
+            MC mc = new(hasBrobizz);
+
+            double actual = mc.Price();
+
+            Assert.AreEqual(expectedPrice, actual, 0.01);
         }
 
         [TestMethod]
