@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="ClassLibraryTicketSystem">
+      <HintPath>external dll\ClassLibraryTicketSystem.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
