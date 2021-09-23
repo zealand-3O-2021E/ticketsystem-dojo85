@@ -2,7 +2,6 @@
 
 namespace StoreBaeltTicketLibrary
 {
-
     /// <summary>
     /// This car class is specific for the Storebaelt company and is adjusted to their
     /// requirements concerning weekend discount.
@@ -61,7 +60,6 @@ namespace StoreBaeltTicketLibrary
         {
             return price - CalculatePercents(price, 5);
         }
-
 
         /// <summary>
         /// Helpter mehtod to calculate a certain percentage of another number.
