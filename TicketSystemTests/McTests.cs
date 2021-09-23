@@ -28,7 +28,7 @@ namespace TicketSystemTests
             MC mc = new();
             string expected = "MC";
 
-            string actual = mc.Vehicle();
+            string actual = mc.VehicleType();
 
             Assert.AreEqual(expected, actual);
         }
