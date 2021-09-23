@@ -13,6 +13,13 @@ namespace ClassLibraryTicketSystem
     {
         private string _licensePlate;
 
+        #region Constructors
+        /// <summary>
+        /// Use this constructor to specify if a Brobizz was used.
+        /// </summary>
+        /// <param name="brobizz">Set "true" if a Brobizz is used.
+        /// Set "false" or "null" if no Brobizz is used.
+        /// </param>
         public Vehicle(bool brobizz)
         {
             HasBrobizz = brobizz;
@@ -20,9 +27,13 @@ namespace ClassLibraryTicketSystem
 
         public Vehicle()
         {
-                
         }
+        #endregion
 
+        #region Properties
+        /// <summary>
+        /// This property indicates if a Brobizz was used to buy the ticket.
+        /// </summary>
         protected bool HasBrobizz { get; set; }
 
         /// <summary>
@@ -52,9 +63,12 @@ namespace ClassLibraryTicketSystem
         /// This property provides the vehicle type.
         /// </summary>
         protected virtual string Type { get; set; }
+        #endregion
 
+        #region Methods
         /// <summary>
         /// Method to retrieve the ticket price for this vehicle.
+        /// If a Brobizz was used, the discount will be included in the returned value.
         /// </summary>
         /// <returns>Price as double</returns>
         public virtual double Price()
@@ -74,7 +88,6 @@ namespace ClassLibraryTicketSystem
         {
             return Type;
         }
-
-
+        #endregion
     }
 }
