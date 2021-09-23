@@ -2,6 +2,7 @@
 
 namespace StoreBaeltTicketLibrary
 {
+
     /// <summary>
     /// This car class is specific for the Storebaelt company and is adjusted to their
     /// requirements concerning weekend discount.
