@@ -6,12 +6,27 @@ using System.Threading.Tasks;
 
 namespace ClassLibraryTicketSystem
 {
+    /// <summary>
+    /// This class is used as base class for different vehicle types.
+    /// </summary>
     public abstract class Vehicle
     {
+        private string _licensePlate;
+
         /// <summary>
         /// The license number plate of the vehicle used.
         /// </summary>
-        public string LicensePlate { get; set; }
+        public string LicensePlate {
+            get => _licensePlate;
+            set
+            {
+                if (value.Length > 7)
+                    throw new ArgumentException("The numberplate must not be longer than 7 characters.");
+                _licensePlate = value;
+            }
+        }
+
+
         /// <summary>
         /// The date and time of the ticket purchase with this vehicle.
         /// </summary>
