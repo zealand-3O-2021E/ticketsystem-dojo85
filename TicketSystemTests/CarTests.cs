@@ -12,7 +12,7 @@ namespace TicketSystemTests
             Car car = new();
             double expected = 240;
 
-            double actual = car.Price();
+            double actual = car.Price();          
 
             Assert.AreEqual(expected, actual);
         }
