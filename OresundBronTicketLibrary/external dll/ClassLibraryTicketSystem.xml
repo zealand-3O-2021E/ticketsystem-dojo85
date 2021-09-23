@@ -9,10 +9,14 @@
             Represents a vehicle of type: Car
             </summary>
         </member>
-        <member name="M:ClassLibraryTicketSystem.Car.#ctor(System.Boolean)">
+        <member name="M:ClassLibraryTicketSystem.Car.#ctor(System.String,System.DateTime,System.Boolean)">
             <summary>
-            Use this constructor to specify if a Brobizz was used.
+            Use this constructor to create a new car.
             </summary>
+            <param name="license">License plate of the used vehicle.
+            </param>
+            <param name="date">Date of the trip.
+            </param>
             <param name="brobizz">Set "true" if a Brobizz is used.
             Set "false" or "null" if no Brobizz is used.
             </param>
@@ -32,10 +36,14 @@
             Represents a vehicle of type: Motorcycle
             </summary>
         </member>
-        <member name="M:ClassLibraryTicketSystem.MC.#ctor(System.Boolean)">
+        <member name="M:ClassLibraryTicketSystem.MC.#ctor(System.String,System.DateTime,System.Boolean)">
             <summary>
-            Use this constructor to specify if a Brobizz was used.
+            Use this constructor to create a new motorcycle.
             </summary>
+            <param name="license">License plate of the used vehicle.
+            </param>
+            <param name="date">Date of the trip.
+            </param>
             <param name="brobizz">Set "true" if a Brobizz is used.
             Set "false" or "null" if no Brobizz is used.
             </param>
@@ -55,10 +63,14 @@
             This class is used as base class for different vehicle types.
             </summary>
         </member>
-        <member name="M:ClassLibraryTicketSystem.Vehicle.#ctor(System.Boolean)">
+        <member name="M:ClassLibraryTicketSystem.Vehicle.#ctor(System.String,System.DateTime,System.Boolean)">
             <summary>
-            Use this constructor to specify if a Brobizz was used.
+            Use this constructor to create a new vehicle.
             </summary>
+            <param name="license">License plate of the used vehicle.
+            </param>
+            <param name="date">Date of the trip.
+            </param>
             <param name="brobizz">Set "true" if a Brobizz is used.
             Set "false" or "null" if no Brobizz is used.
             </param>

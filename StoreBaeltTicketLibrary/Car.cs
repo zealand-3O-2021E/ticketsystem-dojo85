@@ -8,13 +8,15 @@ namespace StoreBaeltTicketLibrary
     /// </summary>
     public class Car : ClassLibraryTicketSystem.Car
     {
-        public Car(bool brobizz)
+        public Car(string license, DateTime date, bool brobizz = false)
         {
+            LicensePlate = license;
+            Date = date;
             HasBrobizz = brobizz;
         }
         public Car()
         {
-            
+
         }
 
         /// <summary>

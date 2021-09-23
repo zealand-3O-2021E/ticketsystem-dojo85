@@ -1,3 +1,4 @@
+using System;
 using ClassLibraryTicketSystem;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -23,7 +24,7 @@ namespace TicketSystemTests
         [DataRow(true, 228)]
         public void Price_WithBrobizzConstructor_Test(bool hasBrobizz, double expectedPrice)
         {
-            Car car = new(hasBrobizz);
+            Car car = new("12345", DateTime.Now, hasBrobizz);
 
             double actual = car.Price();
 

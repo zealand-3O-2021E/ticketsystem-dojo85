@@ -28,7 +28,7 @@ namespace TicketSystemTests
         [DataRow(true, 118.75)]
         public void Price_WithBrobizzConstructor_Test(bool hasBrobizz, double expectedPrice)
         {
-            MC mc = new(hasBrobizz);
+            MC mc = new("12345", DateTime.Now, hasBrobizz);
 
             double actual = mc.Price();
 

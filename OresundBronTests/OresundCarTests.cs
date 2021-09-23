@@ -1,3 +1,4 @@
+using System;
 using ClassLibraryTicketSystem;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OresundBronTicketLibrary;
@@ -22,7 +23,7 @@ namespace OresundBronTests
         [DataRow(true, 161)]
         public void Price_Test(bool brobizz, double expectedPrice)
         {
-            Car car = new Car(brobizz);
+            Car car = new Car("12345", DateTime.Now, brobizz);
             double actualPrice = car.Price();
 
             Assert.AreEqual(expectedPrice, actualPrice);

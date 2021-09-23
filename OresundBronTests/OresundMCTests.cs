@@ -24,7 +24,7 @@ namespace OresundBronTests
         [DataRow(true, 73)]
         public void Price_Test(bool brobizz, double expectedPrice)
         {
-            MC mc = new MC(brobizz);
+            MC mc = new MC("12345", DateTime.Now, brobizz);
             double actualPrice = mc.Price();
             Assert.AreEqual(expectedPrice, actualPrice);
         }
