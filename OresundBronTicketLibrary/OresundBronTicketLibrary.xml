@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OresundBronTicketLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:OresundBronTicketLibrary.Car">
+            <summary>
+            OresundBron specific Car class.
+            </summary>
+        </member>
+        <member name="M:OresundBronTicketLibrary.Car.#ctor(System.Boolean)">
+            <summary>
+            Use this constructor to specify if a Brobizz was used.
+            </summary>
+            <param name="brobizz">Set "true" if a Brobizz is used.
+            Set "false" or "null" if no Brobizz is used.
+            </param>
+        </member>
+        <member name="P:OresundBronTicketLibrary.Car.TicketPrice">
+            <summary>
+            Use this property to specify the ticket price for this vehicle type.
+            </summary>
+        </member>
+        <member name="P:OresundBronTicketLibrary.Car.Type">
+            <summary>
+            Use this property to specify the vehicle type.
+            </summary>
+        </member>
+        <member name="M:OresundBronTicketLibrary.Car.Price">
+            <summary>
+            This method returns the price including an eventual Brobizz discount.
+            </summary>
+            <returns>The final price as double.</returns>
+        </member>
+        <member name="T:OresundBronTicketLibrary.MC">
+            <summary>
+            OresundBron specific Motorcycle class.
+            </summary>
+        </member>
+        <member name="M:OresundBronTicketLibrary.MC.#ctor(System.Boolean)">
+            <summary>
+            Use this constructor to specify if a Brobizz was used.
+            </summary>
+            <param name="brobizz">Set "true" if a Brobizz is used.
+            Set "false" or "null" if no Brobizz is used.
+            </param>
+        </member>
+        <member name="P:OresundBronTicketLibrary.MC.TicketPrice">
+            <summary>
+            Use this property to specify the ticket price for this vehicle type.
+            </summary>
+        </member>
+        <member name="P:OresundBronTicketLibrary.MC.Type">
+            <summary>
+            Use this property to specify the vehicle type.
+            </summary>
+        </member>
+        <member name="M:OresundBronTicketLibrary.MC.Price">
+            <summary>
+            This method returns the price including an eventual Brobizz discount.
+            </summary>
+            <returns>The final price as double.</returns>
+        </member>
+    </members>
+</doc>
