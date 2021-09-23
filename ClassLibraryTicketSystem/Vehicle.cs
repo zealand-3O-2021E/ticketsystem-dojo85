@@ -13,8 +13,22 @@ namespace ClassLibraryTicketSystem
     {
         private string _licensePlate;
 
+        public Vehicle(bool brobizz)
+        {
+            HasBrobizz = brobizz;
+        }
+
+        public Vehicle()
+        {
+                
+        }
+
+        protected bool HasBrobizz { get; set; }
+
         /// <summary>
         /// The license number plate of the vehicle used.
+        /// Maximum allowed length of 7 characters.
+        /// Throws ArgumentException if longer than 7 characters.
         /// </summary>
         public string LicensePlate {
             get => _licensePlate;
@@ -25,7 +39,6 @@ namespace ClassLibraryTicketSystem
                 _licensePlate = value;
             }
         }
-
 
         /// <summary>
         /// The date and time of the ticket purchase with this vehicle.
@@ -46,6 +59,10 @@ namespace ClassLibraryTicketSystem
         /// <returns>Price as double</returns>
         public virtual double Price()
         {
+            if (HasBrobizz)
+            {
+                return TicketPrice - TicketPrice * 0.05;
+            }
             return TicketPrice;
         }
 
