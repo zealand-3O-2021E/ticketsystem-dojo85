@@ -94,6 +94,13 @@ namespace ClassLibraryTicketSystem
         {
             return Type;
         }
+
+        public override string ToString()
+        {
+            string discount = HasBrobizz ? ", BroBizz" : null;
+            return $"{VehicleType()}, {LicensePlate}, {Date}, {Price()}{discount}";
+        }
+
         #endregion
     }
 }
