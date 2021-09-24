@@ -4,13 +4,13 @@
         <name>StoreBaeltTicketLibrary</name>
     </assembly>
     <members>
-        <member name="T:StoreBaeltTicketLibrary.Car">
+        <member name="T:StoreBaeltTicketLibrary.StorebaeltCar">
             <summary>
             This car class is specific for the Storebaelt company and is adjusted to their
             requirements concerning weekend discount.
             </summary>
         </member>
-        <member name="M:StoreBaeltTicketLibrary.Car.Price">
+        <member name="M:StoreBaeltTicketLibrary.StorebaeltCar.Price">
             <summary>
             This method is specific to the Storebaelt requirements:
             On weekends, a discount of 20% is granted. 
@@ -18,21 +18,21 @@
             </summary>
             <returns>The total price after including all eventual discounts.</returns>
         </member>
-        <member name="M:StoreBaeltTicketLibrary.Car.GetWeekendDiscount(System.Double)">
+        <member name="M:StoreBaeltTicketLibrary.StorebaeltCar.GetWeekendDiscount(System.Double)">
             <summary>
             This method calculates the weekend discount.
             </summary>
             <param name="price"></param>
             <returns>The amount of the weekend discount.</returns>
         </member>
-        <member name="M:StoreBaeltTicketLibrary.Car.GetBrobizzDiscount(System.Double)">
+        <member name="M:StoreBaeltTicketLibrary.StorebaeltCar.GetBrobizzDiscount(System.Double)">
             <summary>
             This method calculates the Brobizz discount.
             </summary>
             <param name="price"></param>
             <returns>The amount of the Brobizz discount.</returns>
         </member>
-        <member name="M:StoreBaeltTicketLibrary.Car.CalculatePercents(System.Double,System.Double)">
+        <member name="M:StoreBaeltTicketLibrary.StorebaeltCar.CalculatePercents(System.Double,System.Double)">
             <summary>
             Helpter mehtod to calculate a certain percentage of another number.
             </summary>

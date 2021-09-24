@@ -10,7 +10,7 @@ namespace OresundBronTicketLibrary
     /// <summary>
     /// OresundBron specific Motorcycle class.
     /// </summary>
-    public class MC : Vehicle
+    public class OresundMC : Vehicle
     {
         /// <summary>
         /// Use this constructor to create a new motorcycle.
@@ -22,14 +22,14 @@ namespace OresundBronTicketLibrary
         /// <param name="brobizz">Set "true" if a Brobizz is used.
         /// Set "false" or "null" if no Brobizz is used.
         /// </param>
-        public MC(string license, DateTime date, bool brobizz = false)
+        public OresundMC(string license, DateTime date, bool brobizz = false)
         {
             LicensePlate = license;
             Date = date;
             HasBrobizz = brobizz;
         }
 
-        public MC()
+        public OresundMC()
         {
         }
 

@@ -2,7 +2,6 @@ using System;
 using ClassLibraryTicketSystem;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OresundBronTicketLibrary;
-using Car = OresundBronTicketLibrary.Car;
 
 namespace OresundBronTests
 {
@@ -12,8 +11,8 @@ namespace OresundBronTests
         [TestMethod]
         public void VehicleType_Test()
         {
-            OresundBronTicketLibrary.Car car = new OresundBronTicketLibrary.Car();
-            string actual = car.VehicleType();
+            OresundBronTicketLibrary.OresundCar oresundCar = new OresundBronTicketLibrary.OresundCar();
+            string actual = oresundCar.VehicleType();
 
             Assert.AreEqual("Oresund Car", actual);
         }
@@ -23,8 +22,8 @@ namespace OresundBronTests
         [DataRow(true, 161)]
         public void Price_Test(bool brobizz, double expectedPrice)
         {
-            Car car = new Car("12345", DateTime.Now, brobizz);
-            double actualPrice = car.Price();
+            OresundCar oresundCar = new OresundCar("12345", DateTime.Now, brobizz);
+            double actualPrice = oresundCar.Price();
 
             Assert.AreEqual(expectedPrice, actualPrice);
         }

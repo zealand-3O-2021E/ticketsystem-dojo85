@@ -6,7 +6,7 @@ namespace OresundBronTicketLibrary
     /// <summary>
     /// OresundBron specific Car class.
     /// </summary>
-    public class Car : Vehicle
+    public class OresundCar : Vehicle
     {
         /// <summary>
         /// Use this constructor to create a new car.
@@ -18,14 +18,14 @@ namespace OresundBronTicketLibrary
         /// <param name="brobizz">Set "true" if a Brobizz is used.
         /// Set "false" or "null" if no Brobizz is used.
         /// </param>
-        public Car(string license, DateTime date, bool brobizz = false)
+        public OresundCar(string license, DateTime date, bool brobizz = false)
         {
             LicensePlate = license;
             Date = date;
             HasBrobizz = brobizz;
         }
 
-        public Car()
+        public OresundCar()
         {
         }
 

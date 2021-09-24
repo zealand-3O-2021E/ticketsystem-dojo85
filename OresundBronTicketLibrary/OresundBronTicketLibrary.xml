@@ -4,12 +4,12 @@
         <name>OresundBronTicketLibrary</name>
     </assembly>
     <members>
-        <member name="T:OresundBronTicketLibrary.Car">
+        <member name="T:OresundBronTicketLibrary.OresundCar">
             <summary>
             OresundBron specific Car class.
             </summary>
         </member>
-        <member name="M:OresundBronTicketLibrary.Car.#ctor(System.String,System.DateTime,System.Boolean)">
+        <member name="M:OresundBronTicketLibrary.OresundCar.#ctor(System.String,System.DateTime,System.Boolean)">
             <summary>
             Use this constructor to create a new car.
             </summary>
@@ -21,28 +21,28 @@
             Set "false" or "null" if no Brobizz is used.
             </param>
         </member>
-        <member name="P:OresundBronTicketLibrary.Car.TicketPrice">
+        <member name="P:OresundBronTicketLibrary.OresundCar.TicketPrice">
             <summary>
             Use this property to specify the ticket price for this vehicle type.
             </summary>
         </member>
-        <member name="P:OresundBronTicketLibrary.Car.Type">
+        <member name="P:OresundBronTicketLibrary.OresundCar.Type">
             <summary>
             Use this property to specify the vehicle type.
             </summary>
         </member>
-        <member name="M:OresundBronTicketLibrary.Car.Price">
+        <member name="M:OresundBronTicketLibrary.OresundCar.Price">
             <summary>
             This method returns the price including an eventual Brobizz discount.
             </summary>
             <returns>The final price as double.</returns>
         </member>
-        <member name="T:OresundBronTicketLibrary.MC">
+        <member name="T:OresundBronTicketLibrary.OresundMC">
             <summary>
             OresundBron specific Motorcycle class.
             </summary>
         </member>
-        <member name="M:OresundBronTicketLibrary.MC.#ctor(System.String,System.DateTime,System.Boolean)">
+        <member name="M:OresundBronTicketLibrary.OresundMC.#ctor(System.String,System.DateTime,System.Boolean)">
             <summary>
             Use this constructor to create a new motorcycle.
             </summary>
@@ -54,17 +54,17 @@
             Set "false" or "null" if no Brobizz is used.
             </param>
         </member>
-        <member name="P:OresundBronTicketLibrary.MC.TicketPrice">
+        <member name="P:OresundBronTicketLibrary.OresundMC.TicketPrice">
             <summary>
             Use this property to specify the ticket price for this vehicle type.
             </summary>
         </member>
-        <member name="P:OresundBronTicketLibrary.MC.Type">
+        <member name="P:OresundBronTicketLibrary.OresundMC.Type">
             <summary>
             Use this property to specify the vehicle type.
             </summary>
         </member>
-        <member name="M:OresundBronTicketLibrary.MC.Price">
+        <member name="M:OresundBronTicketLibrary.OresundMC.Price">
             <summary>
             This method returns the price including an eventual Brobizz discount.
             </summary>

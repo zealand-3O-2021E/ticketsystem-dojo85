@@ -6,15 +6,15 @@ namespace StoreBaeltTicketLibrary
     /// This car class is specific for the Storebaelt company and is adjusted to their
     /// requirements concerning weekend discount.
     /// </summary>
-    public class Car : ClassLibraryTicketSystem.Car
+    public class StorebaeltCar : ClassLibraryTicketSystem.Car
     {
-        public Car(string license, DateTime date, bool brobizz = false)
+        public StorebaeltCar(string license, DateTime date, bool brobizz = false)
         {
             LicensePlate = license;
             Date = date;
             HasBrobizz = brobizz;
         }
-        public Car()
+        public StorebaeltCar()
         {
 
         }
