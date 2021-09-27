@@ -10,7 +10,7 @@ namespace OresundBronTicketLibrary
     /// <summary>
     /// OresundBron specific Motorcycle class.
     /// </summary>
-    public class OresundMC : Vehicle
+    public class OresundMC : MC
     {
         /// <summary>
         /// Use this constructor to create a new motorcycle.

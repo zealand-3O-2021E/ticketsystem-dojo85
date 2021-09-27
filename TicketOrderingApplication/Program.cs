@@ -6,7 +6,8 @@ namespace TicketOrderingApplication
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            AppManager manager = new AppManager();
+            manager.MainMenuLoop();
         }
     }
 }

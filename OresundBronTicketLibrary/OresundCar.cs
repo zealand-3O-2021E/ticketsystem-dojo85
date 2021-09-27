@@ -6,7 +6,7 @@ namespace OresundBronTicketLibrary
     /// <summary>
     /// OresundBron specific Car class.
     /// </summary>
-    public class OresundCar : Vehicle
+    public class OresundCar : Car
     {
         /// <summary>
         /// Use this constructor to create a new car.

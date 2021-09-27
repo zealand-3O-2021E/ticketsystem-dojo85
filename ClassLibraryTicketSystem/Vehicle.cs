@@ -40,7 +40,7 @@ namespace ClassLibraryTicketSystem
         /// <summary>
         /// This property indicates if a Brobizz was used to buy the ticket.
         /// </summary>
-        protected bool HasBrobizz { get; set; }
+        public bool HasBrobizz { get; set; }
 
         /// <summary>
         /// The license number plate of the vehicle used.
@@ -102,7 +102,7 @@ namespace ClassLibraryTicketSystem
         public override string ToString()
         {
             string discount = HasBrobizz ? ", BroBizz" : null;
-            return $"{VehicleType()}, {LicensePlate}, {Date}, {Price()}{discount}";
+            return $"{VehicleType()}, {LicensePlate}, {Date}, {Price()} kr.{discount}";
         }
 
         #endregion
