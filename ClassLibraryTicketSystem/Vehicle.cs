@@ -95,6 +95,10 @@ namespace ClassLibraryTicketSystem
             return Type;
         }
 
+        /// <summary>
+        /// Description of this object.
+        /// </summary>
+        /// <returns>Vehicle type, License plate, Date, Price, BroBizz usage</returns>
         public override string ToString()
         {
             string discount = HasBrobizz ? ", BroBizz" : null;
