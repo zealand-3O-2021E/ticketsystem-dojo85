@@ -115,5 +115,11 @@
             </summary>
             <returns>Vehicle type as string.</returns>
         </member>
+        <member name="M:ClassLibraryTicketSystem.Vehicle.ToString">
+            <summary>
+            Description of this object.
+            </summary>
+            <returns>Vehicle type, License plate, Date, Price, BroBizz usage</returns>
+        </member>
     </members>
 </doc>

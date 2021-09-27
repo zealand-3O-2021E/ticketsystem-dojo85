@@ -14,8 +14,8 @@ namespace OresundBronTests
         [TestMethod]
         public void VehicleType_Test()
         {
-            MC mc = new MC();
-            string actualType = mc.VehicleType();
+            OresundMC oresundMc = new OresundMC();
+            string actualType = oresundMc.VehicleType();
             Assert.AreEqual("Oresund MC", actualType);
         }
 
@@ -24,8 +24,8 @@ namespace OresundBronTests
         [DataRow(true, 73)]
         public void Price_Test(bool brobizz, double expectedPrice)
         {
-            MC mc = new MC("12345", DateTime.Now, brobizz);
-            double actualPrice = mc.Price();
+            OresundMC oresundMc = new OresundMC("12345", DateTime.Now, brobizz);
+            double actualPrice = oresundMc.Price();
             Assert.AreEqual(expectedPrice, actualPrice);
         }
     }

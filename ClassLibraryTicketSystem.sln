@@ -11,13 +11,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreBaeltTicketLibrary", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StorebaeltLibraryTests", "StorebaeltLibraryTests\StorebaeltLibraryTests.csproj", "{97665E26-D407-414E-97F8-97A2FD718AD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OresundBronTicketLibrary", "OresundBronTicketLibrary\OresundBronTicketLibrary.csproj", "{011274EA-2214-47F9-903C-B9851A42753F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OresundBronTicketLibrary", "OresundBronTicketLibrary\OresundBronTicketLibrary.csproj", "{011274EA-2214-47F9-903C-B9851A42753F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OresundBronTests", "OresundBronTests\OresundBronTests.csproj", "{C82D5BE4-9C5F-4992-8EAA-06D484D0EB6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OresundBronTests", "OresundBronTests\OresundBronTests.csproj", "{C82D5BE4-9C5F-4992-8EAA-06D484D0EB6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerLibrary", "CustomerLibrary\CustomerLibrary.csproj", "{AF1CB53C-7B59-477E-94A0-30C800B47B41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerLibrary", "CustomerLibrary\CustomerLibrary.csproj", "{AF1CB53C-7B59-477E-94A0-30C800B47B41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerLibraryTests", "CustomerLibraryTests\CustomerLibraryTests.csproj", "{E751EF39-F03A-44BB-8756-C511FFAFD39F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerLibraryTests", "CustomerLibraryTests\CustomerLibraryTests.csproj", "{E751EF39-F03A-44BB-8756-C511FFAFD39F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketOrderingApplication", "TicketOrderingApplication\TicketOrderingApplication.csproj", "{174CC3E3-CD6A-4ED7-AA10-0599EDB42246}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{E751EF39-F03A-44BB-8756-C511FFAFD39F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E751EF39-F03A-44BB-8756-C511FFAFD39F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E751EF39-F03A-44BB-8756-C511FFAFD39F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{174CC3E3-CD6A-4ED7-AA10-0599EDB42246}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{174CC3E3-CD6A-4ED7-AA10-0599EDB42246}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{174CC3E3-CD6A-4ED7-AA10-0599EDB42246}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{174CC3E3-CD6A-4ED7-AA10-0599EDB42246}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

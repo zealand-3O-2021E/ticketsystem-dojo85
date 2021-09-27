@@ -25,9 +25,9 @@ namespace CustomerLibraryTests
         {
             Customer customer = new Customer();
 
-            StoreBaeltTicketLibrary.Car sc1 = new StoreBaeltTicketLibrary.Car("12345", DateTime.Now);
+            StoreBaeltTicketLibrary.StorebaeltCar sc1 = new StoreBaeltTicketLibrary.StorebaeltCar("12345", DateTime.Now);
             MC mc1 = new MC("123", DateTime.Now, true);
-            OresundBronTicketLibrary.MC omc1 = new OresundBronTicketLibrary.MC("1324", DateTime.Now);
+            OresundBronTicketLibrary.OresundMC omc1 = new OresundBronTicketLibrary.OresundMC("1324", DateTime.Now);
             // total amount: 568.75
 
             customer.Trips.Add(sc1);

@@ -6,15 +6,17 @@ namespace StoreBaeltTicketLibrary
     /// This car class is specific for the Storebaelt company and is adjusted to their
     /// requirements concerning weekend discount.
     /// </summary>
-    public class Car : ClassLibraryTicketSystem.Car
+    public class StorebaeltCar : ClassLibraryTicketSystem.Car
     {
-        public Car(string license, DateTime date, bool brobizz = false)
+        private bool _isWeekend = false;
+
+        public StorebaeltCar(string license, DateTime date, bool brobizz = false)
         {
             LicensePlate = license;
             Date = date;
             HasBrobizz = brobizz;
         }
-        public Car()
+        public StorebaeltCar()
         {
 
         }
@@ -33,6 +35,7 @@ namespace StoreBaeltTicketLibrary
             if (weekday == 0 || weekday == 6)
             {
                 price = GetWeekendDiscount(price);
+                _isWeekend = true;
             }
 
             if (HasBrobizz)
@@ -72,6 +75,19 @@ namespace StoreBaeltTicketLibrary
         private double CalculatePercents(double baseValue, double percentage)
         {
             return (baseValue/100) * percentage;
+        }
+
+        /// <summary>
+        /// Description of this object.
+        /// </summary>
+        /// <returns>Vehicle type, License plate, Date, Price, BroBizz usage, Weekend discount</returns>
+        public override string ToString()
+        {
+            if (_isWeekend)
+            {
+                return base.ToString() + $", Weekend discount";
+            }
+            return base.ToString();
         }
     }
 }
