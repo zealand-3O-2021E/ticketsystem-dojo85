@@ -65,10 +65,6 @@ namespace ClassLibraryTicketSystem
         /// This property provides the standard ticket price for this vehicle type.
         /// </summary>
         protected virtual double TicketPrice { get; set; }
-        /// <summary>
-        /// This property provides the vehicle type.
-        /// </summary>
-        protected virtual string Type { get; set; }
         #endregion
 
         #region Methods
@@ -81,7 +77,7 @@ namespace ClassLibraryTicketSystem
         {
             if (HasBrobizz)
             {
-                return TicketPrice - TicketPrice * 0.05;
+                return TicketPrice * 0.95;
             }
             return TicketPrice;
         }
@@ -90,10 +86,7 @@ namespace ClassLibraryTicketSystem
         /// Method to retrieve the vehicle type.
         /// </summary>
         /// <returns>Vehicle type as string.</returns>
-        public virtual string VehicleType()
-        {
-            return Type;
-        }
+        public virtual string VehicleType() => "Vehicle";
 
         /// <summary>
         /// Description of this object.

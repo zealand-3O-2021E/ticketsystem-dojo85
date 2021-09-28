@@ -26,9 +26,9 @@
             Use this property to specify the ticket price for this vehicle type.
             </summary>
         </member>
-        <member name="P:OresundBronTicketLibrary.OresundCar.Type">
+        <member name="M:OresundBronTicketLibrary.OresundCar.VehicleType">
             <summary>
-            Use this property to specify the vehicle type.
+            Use this method to specify the vehicle type.
             </summary>
         </member>
         <member name="M:OresundBronTicketLibrary.OresundCar.Price">
@@ -59,9 +59,9 @@
             Use this property to specify the ticket price for this vehicle type.
             </summary>
         </member>
-        <member name="P:OresundBronTicketLibrary.OresundMC.Type">
+        <member name="M:OresundBronTicketLibrary.OresundMC.VehicleType">
             <summary>
-            Use this property to specify the vehicle type.
+            Use this method to specify the vehicle type.
             </summary>
         </member>
         <member name="M:OresundBronTicketLibrary.OresundMC.Price">

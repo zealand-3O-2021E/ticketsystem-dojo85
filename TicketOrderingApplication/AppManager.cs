@@ -12,7 +12,7 @@ namespace TicketOrderingApplication
 {
     public class AppManager
     {
-        private const string Separator = "====================================";
+        private const string Separator = "========================================================";
         private VehicleFactory _factory;
 
         public AppManager()
@@ -22,23 +22,23 @@ namespace TicketOrderingApplication
 
         public void MainMenuLoop()
         {
-            bool buyTicket = true;
-            while (buyTicket)
+            bool isBuyingTicket = true;
+            while (isBuyingTicket)
             {
                 PrintWelcomeScreen();
                 string company = SelectCompany();
                 Vehicle vehicle = SelectVehicleType(company);
-                GetVehicleData(vehicle);
+                GetVehicleDataInput(vehicle);
+                Console.Clear();
                 Console.WriteLine("Thank you for your purchase.");
-                Console.WriteLine(vehicle);
+                Console.WriteLine("Your order: " + vehicle.ToString());
                 Console.ReadLine();
-
                 Console.WriteLine("Would you like to buy another ticket?" +
-                                  "Enter Y for yes. Otherwise the system will terminate.");
+                                  "\nEnter Y for yes. Otherwise the system will terminate.");
                 string input = Console.ReadLine();
                 if (input.ToLower() != "y")
                 {
-                    buyTicket = false;
+                    isBuyingTicket = false;
                 }
             }
         }
@@ -49,7 +49,7 @@ namespace TicketOrderingApplication
             Console.WriteLine("\tWelcome to the ticket ordering system");
             Console.WriteLine(Separator);
             Console.WriteLine("\nPress any key to proceed.");
-            Console.ReadLine();
+            Console.ReadKey();
         }
 
         private string SelectCompany()
@@ -58,7 +58,7 @@ namespace TicketOrderingApplication
             Console.WriteLine(Separator);
             Console.WriteLine("\tSelect a company");
             Console.WriteLine(Separator);
-            Console.WriteLine("\nSelect the vehicle type by pressing the corresponding number and enter?");
+            Console.WriteLine("\nSelect the company by pressing the corresponding number and enter?");
             Console.WriteLine("\t1. Storebaelt");
             Console.WriteLine("\t2. Oresund");
             string company = "";
@@ -121,41 +121,84 @@ namespace TicketOrderingApplication
             Console.WriteLine("\t2. Motorcycle");
         }
 
-        public void GetVehicleData(Vehicle vehicle1)
+        public void GetVehicleDataInput(Vehicle vehicle)
         {
-            Vehicle vehicle = vehicle1;
             Console.Clear();
             Console.WriteLine(Separator);
             Console.WriteLine($"\tTrip details");
             Console.WriteLine(Separator);
-            Console.WriteLine("Enter the vehicles license plate. It must not be longer than 7 characters.");
 
+            vehicle.LicensePlate = SetVehiclesLicensePlate(vehicle);
+            vehicle.Date = ParsedDate();
+            vehicle.HasBrobizz = CheckForBroBizz();
+        }
+
+        private string SetVehiclesLicensePlate(Vehicle vehicle)
+        {
+            Console.WriteLine("Enter the vehicles license plate. It must not be longer than 7 characters.");
             bool isValidLicensePlate = false;
+            string plateNumber = "";
             while (!isValidLicensePlate)
             {
                 try
                 {
                     vehicle.LicensePlate = Console.ReadLine();
-                    isValidLicensePlate = true;
+                    if (!string.IsNullOrEmpty(vehicle.LicensePlate) && !string.IsNullOrWhiteSpace(vehicle.LicensePlate))
+                    {
+                        isValidLicensePlate = true;
+                        plateNumber = vehicle.LicensePlate;
+                    }
+
+                    Console.WriteLine("You have to specify a license plate number.");
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine(e);
+                    Console.WriteLine(e.Message);
+                }
+                Console.WriteLine("Please try again: ");
+            }
+            return plateNumber;
+        }
+
+        private DateTime ParsedDate()
+        {
+            DateTime date = new DateTime();
+            bool tryParse = true;
+            while (tryParse)
+            { 
+                Console.WriteLine("Enter the date in DD.MM.YYYY format.");
+                string dateInput = Console.ReadLine();
+                try
+                {
+                    date = DateTime.Parse(dateInput);
+                    if (date > DateTime.Now)
+                    {
+                        tryParse = false;
+                    }
+                    else
+                    {
+                       Console.WriteLine("You can't buy tickets for the past."); 
+                    }
+                    
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine($"The date was in wrong format: {dateInput}");
+                    Console.WriteLine("Please try again.");
                 }
             }
+            return date;
+        }
 
-            Console.WriteLine("Enter the date in DD.MM.YYYY format.");
-            string dateInput = Console.ReadLine();
-            DateTime date = DateTime.Parse(dateInput);
-            vehicle.Date = date;
-
+        private bool CheckForBroBizz()
+        {
             Console.WriteLine("Are you using a BroBizz? If you do, press Y for yes.");
             string bizzInput = Console.ReadLine();
             if (bizzInput.ToLower() == "y")
             {
-                vehicle.HasBrobizz = true;
+                return true;
             }
-            
+            return false;
         }
 
 

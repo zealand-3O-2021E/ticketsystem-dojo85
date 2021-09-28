@@ -39,9 +39,9 @@ namespace OresundBronTicketLibrary
         protected override double TicketPrice => 210;
 
         /// <summary>
-        /// Use this property to specify the vehicle type.
+        /// Use this method to specify the vehicle type.
         /// </summary>
-        protected override string Type => "Oresund MC";
+        public override string VehicleType() => "Oresund MC";
 
         /// <summary>
         /// This method returns the price including an eventual Brobizz discount.

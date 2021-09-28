@@ -26,11 +26,6 @@
             Use this property to specify the ticket price for this vehicle type.
             </summary>
         </member>
-        <member name="P:ClassLibraryTicketSystem.Car.Type">
-            <summary>
-            Use this property to specify the vehicle type.
-            </summary>
-        </member>
         <member name="T:ClassLibraryTicketSystem.MC">
             <summary>
             Represents a vehicle of type: Motorcycle
@@ -51,11 +46,6 @@
         <member name="P:ClassLibraryTicketSystem.MC.TicketPrice">
             <summary>
             Use this property to specify the ticket price for this vehicle type.
-            </summary>
-        </member>
-        <member name="P:ClassLibraryTicketSystem.MC.Type">
-            <summary>
-            Use this property to specify the vehicle type.
             </summary>
         </member>
         <member name="T:ClassLibraryTicketSystem.Vehicle">
@@ -95,11 +85,6 @@
         <member name="P:ClassLibraryTicketSystem.Vehicle.TicketPrice">
             <summary>
             This property provides the standard ticket price for this vehicle type.
-            </summary>
-        </member>
-        <member name="P:ClassLibraryTicketSystem.Vehicle.Type">
-            <summary>
-            This property provides the vehicle type.
             </summary>
         </member>
         <member name="M:ClassLibraryTicketSystem.Vehicle.Price">

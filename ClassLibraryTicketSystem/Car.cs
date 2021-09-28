@@ -37,9 +37,7 @@ namespace ClassLibraryTicketSystem
         /// Use this property to specify the ticket price for this vehicle type.
         /// </summary>
         protected override double TicketPrice => 240;
-        /// <summary>
-        /// Use this property to specify the vehicle type.
-        /// </summary>
-        protected override string Type => "Car";
+
+        public override string VehicleType() => "Car";
     }
 }

@@ -85,7 +85,7 @@ namespace StoreBaeltTicketLibrary
         {
             if (_isWeekend)
             {
-                return base.ToString() + $", Weekend discount";
+                return (base.ToString() + ", Weekend discount");
             }
             return base.ToString();
         }
