@@ -1,4 +1,5 @@
 ﻿using System;
+using TicketOrderingApplication.VehicleFactory;
 
 namespace TicketOrderingApplication
 {
@@ -6,7 +7,8 @@ namespace TicketOrderingApplication
     {
         static void Main(string[] args)
         {
-            AppManager manager = new AppManager();
+            IVehicleFactory factory = new VehicleFactoryV2();
+            TicketStore manager = new TicketStore(factory);
             manager.MainMenuLoop();
         }
     }

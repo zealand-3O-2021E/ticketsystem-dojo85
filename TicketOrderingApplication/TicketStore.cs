@@ -7,17 +7,18 @@ using System.Threading.Channels;
 using System.Threading.Tasks;
 using ClassLibraryTicketSystem;
 using StoreBaeltTicketLibrary;
+using TicketOrderingApplication.VehicleFactory;
 
 namespace TicketOrderingApplication
 {
-    public class AppManager
+    public class TicketStore
     {
         private const string Separator = "========================================================";
-        private VehicleFactory _factory;
+        private IVehicleFactory _factory;
 
-        public AppManager()
+        public TicketStore(IVehicleFactory factory)
         {
-            _factory = new VehicleFactory();
+            _factory = factory;
         }
 
         public void MainMenuLoop()
@@ -31,7 +32,7 @@ namespace TicketOrderingApplication
                 GetVehicleDataInput(vehicle);
                 Console.Clear();
                 Console.WriteLine("Thank you for your purchase.");
-                Console.WriteLine("Your order: " + vehicle.ToString());
+                Console.WriteLine("Your order: " + vehicle);
                 Console.ReadLine();
                 Console.WriteLine("Would you like to buy another ticket?" +
                                   "\nEnter Y for yes. Otherwise the system will terminate.");
