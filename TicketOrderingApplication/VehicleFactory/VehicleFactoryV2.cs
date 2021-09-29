@@ -7,9 +7,13 @@ using ClassLibraryTicketSystem;
 using OresundBronTicketLibrary;
 using StoreBaeltTicketLibrary;
 
-namespace TicketOrderingApplication
+namespace TicketOrderingApplication.VehicleFactory
 {
-    public class VehicleFactory
+    /// <summary>
+    /// This class provides the functions for the vehicle factory.
+    /// Implements the IVehicleInterface.
+    /// </summary>
+    public class VehicleFactoryV2 : IVehicleFactory
     {
         public Car CreateCar(string company)
         {
@@ -26,6 +30,7 @@ namespace TicketOrderingApplication
                     car = new Car();
                     break;
             }
+
             return car;
         }
 
@@ -44,6 +49,7 @@ namespace TicketOrderingApplication
                     mc = new MC();
                     break;
             }
+
             return mc;
         }
     }
