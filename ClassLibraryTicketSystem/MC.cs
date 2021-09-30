@@ -20,9 +20,6 @@ namespace ClassLibraryTicketSystem
         public MC(string license, DateTime date, bool brobizz = false)
             : base(license, date, brobizz)
         {
-            LicensePlate = license;
-            Date = date;
-            HasBrobizz = brobizz;
         }
 
         public MC()

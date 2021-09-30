@@ -11,10 +11,8 @@ namespace StoreBaeltTicketLibrary
         private bool _isWeekend = false;
 
         public StorebaeltCar(string license, DateTime date, bool brobizz = false)
+            : base(license, date, brobizz)
         {
-            LicensePlate = license;
-            Date = date;
-            HasBrobizz = brobizz;
         }
         public StorebaeltCar()
         {

@@ -19,10 +19,8 @@ namespace OresundBronTicketLibrary
         /// Set "false" or "null" if no Brobizz is used.
         /// </param>
         public OresundCar(string license, DateTime date, bool brobizz = false)
-        {
-            LicensePlate = license;
-            Date = date;
-            HasBrobizz = brobizz;
+            : base(license, date, brobizz)
+        {           
         }
 
         public OresundCar()

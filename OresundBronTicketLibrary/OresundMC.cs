@@ -23,10 +23,8 @@ namespace OresundBronTicketLibrary
         /// Set "false" or "null" if no Brobizz is used.
         /// </param>
         public OresundMC(string license, DateTime date, bool brobizz = false)
+            : base(license, date, brobizz)
         {
-            LicensePlate = license;
-            Date = date;
-            HasBrobizz = brobizz;
         }
 
         public OresundMC()
