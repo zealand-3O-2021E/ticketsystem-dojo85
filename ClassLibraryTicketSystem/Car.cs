@@ -29,6 +29,9 @@ namespace ClassLibraryTicketSystem
             HasBrobizz = brobizz;
         }
 
+        /// <summary>
+        /// This is an empty constructor for the Car class
+        /// </summary>
         public Car()
         {
         }
