@@ -26,6 +26,9 @@ namespace ClassLibraryTicketSystem
         {
         }
 
+        /// <summary>
+        /// This is an empty constructor for the Car class
+        /// </summary>
         public Car()
         {
         }
