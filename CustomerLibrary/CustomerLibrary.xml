@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CustomerLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:CustomerLibrary.Customer">
+            <summary>
+            Class for customer data.
+            </summary>
+        </member>
+        <member name="M:CustomerLibrary.Customer.SumForAllTrips">
+            <summary>
+            This method calculates the total amount of money for all tickets the customer bought.
+            </summary>
+            <returns>The total amount as double.</returns>
+        </member>
+    </members>
+</doc>

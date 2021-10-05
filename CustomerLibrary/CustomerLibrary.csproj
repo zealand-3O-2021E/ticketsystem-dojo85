@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\VSProjects\PROG\TicketSystemAssignment\CustomerLibrary\CustomerLibrary.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibraryTicketSystem\ClassLibraryTicketSystem.csproj" />
+    <ProjectReference Include="..\OresundBronTicketLibrary\OresundBronTicketLibrary.csproj" />
+    <ProjectReference Include="..\StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.csproj" />
+  </ItemGroup>
+
+</Project>
